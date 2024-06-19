@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width and Height of Element</title>
+
+    <style>
+        .color {
+            background-color: yellow;
+            color: blue;
+        }
+        .dim {
+            border: 1px solid red;
+            padding: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Width and Height of Element</h1>
+
+    <div id="box" class="color dim">
+        <p>This is a dummy Text!</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        // let width = box.offsetWidth;
+        let Height = box.offsetHeight;
+
+        let width = box.clientWidth;
+
+        console.log(width);
+        console.log(Height);
+    </script>
+</body>
+</html>

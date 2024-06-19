@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Event Listener</title>
+
+    
+</head>
+<body>
+    <h1>Remove Event Listener</h1>
+
+    <button id="btn">Click ME !</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+
+        function click1() {
+            console.log(("Click1 activated"));
+        }
+
+        function click2() {
+            console.log(("Click2 activated"));
+        }
+
+        btn.addEventListener('click',click1);
+        btn.addEventListener('click',click2);
+
+        btn.removeEventListener('click', click2); // 2 parameter
+    </script>
+</body>
+</html>

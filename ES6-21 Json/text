@@ -1,0 +1,48 @@
+JSON :- JSON is a text format for storing and transporting Data Commonly user for API and config files.
+
+JSON syntax is derived from javascript object notation syntax:
+
+Data is in name/value pairs
+Data is separated by commas
+Curly braces hold objects
+Square brackets hold arrays
+{
+    "name" : "Satyam Chauhan,
+    "age" : 22,
+    "lang" " ["c","C++","java","php"]
+}
+
+JSON is Language independent
+(Code for reading and generating JSON exists in many programming Languages.)
+
+Earlier XML was used instead of JSON
+
+Then why JSON
+
+* JSON is faster in term of data parsing
+* JSON is cleaner than XML
+* JSON is light weight than xml
+* Easy to read and write
+
+
+============================== JSON vs XML ================================
+
+XML                                                                                     JSON
+
+<empinfo>                                                                                 { "empinfo" :
+    <employees>                                                                                   {
+    <employee>                                                                                           "employees" : [
+    <name>Satyam Chauhan</name>                                                                             {
+    <age>22</age>                                                                                               "name" : "Satyam chauhan",
+    </employee>                                                                                                  "age" : 22,
+    <employee>                                                                                              },
+    <name>Shivam Chauhan</name>                                                                             {
+    <age>25</age>                                                                                                "name" : "Satyam chauhan",
+    </employee>                                                                                                   "age" : 25,
+    </employees>                                                                                            },
+    <name>Iron </name>                                                                                      {
+    <age>30</age>                                                                                               "name" : "Satyam chauhan",
+    <employee>                                                                                                    "age: : 30,
+    <employees>                                                                                              }
+</empinfo>                                                                                              ]
+                                                                                            }  

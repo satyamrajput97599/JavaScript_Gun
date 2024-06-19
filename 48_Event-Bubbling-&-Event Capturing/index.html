@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling & Event Capturing</title>
+    <style>
+        body {
+            padding: 100px;
+            background-color: cornsilk;
+        }
+
+        #myDiv{
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbling & Event Capturing</h1>
+
+    <div id="myDiv">
+        <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+        let d = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        b.addEventListener('click', btnClick);
+        d.addEventListener('click', divClick);
+
+        document.body.addEventListener('click', bodyClicked);
+
+        function btnClick(event) {
+            console.log("button clicked....");
+            event.stopPropagation();
+        }
+
+        function divClick(event) {
+            console.log("Div clicked....");
+            event.stopPropagation();
+        }
+
+        function bodyClicked() {
+            console.log("Body clicked....");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "name" : "Satyam",
+    "age" : 25,
+    "is_student" : true,
+    "password_no" : null,
+    "p_lan" : ["Java","PHP","C","C++"],
+    "address" : {
+        "street" : "Dehradun",
+        "city" : "New York",
+        "pincode" : 248001
+    }
+}

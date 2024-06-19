@@ -1,0 +1,98 @@
+How we will proceed
+
+1. Understand Object Oriented concept in real life
+2. Understand Object Oriented concept in Programming (procedural vs object Oriented)
+3. Four pillar of Object Oriented Programming (important for interview)
+4. Old object Oriented Programming in JavaScript till ES5
+5. New Class feature in ES6
+
+
+Understand Object Oriented Concept in real life
+
+Three important words to Understand
+1. Object
+2. Class
+3. Inheritance
+
+
+Object :- 
+In this world every thing is a object (living things and non living things)
+
+Example: satyam (man), Honda city (car)
+
+Every Object has 2 things:
+
+1. Features or Properties
+2. Actions Performed by or Performed on it
+
+* Satyam (man)
+
+1. Feature or Properties:- full name, height, weight, age
+2. Actions :- walk, eat, sleep
+
+* Honda city (car)
+1. Feature or Properties :- name, color, model, brand
+2. Actions :- drive, repair, fuel filling
+
+
+
+Class - (Grouping of object)
+
+satyam (man) - satyam is a object of man class,
+JeffBezos (man) - satyam is a object of man class,
+Elon musk (man) - satyam is a object of man class,
+
+
+Class (Man)
+
+1. features or Properties :- full name, height, weight
+2. action :- walk, eat
+
+class (software engineer)
+1. feature or properties :- full name, employee id, year of experience, expertise
+2. action :- code, text, debug, deploy
+
+Problem: Satyam is a object of Software engineer class and a object of man class.
+
+============ Inheritance ==============
+
+Class (Man)
+
+1. features or Properties :- full name, height, weight, age
+2. action :- walk, eat
+
+class (software engineer inherit man class)
+
+1. feature or properties :- employee id, year of experience, expertise
+2. action :- code, text, debug, deploy
+
+satyam(Software engineer)
+
+
+
+***** Object Oriented Programming(OOP) **************
+
+In OOP concept we group function and variable and variable in a Block Called Class
+
+This is not the Exact Syntax
+
+
+
+=========== Four pillars of oBject Oriented Programming ===================
+====================(important for interview)===================
+
+1. Encapsulation :-  Encapsulation means wrapping up data and member function (Method) together into a single unit class.
+
+2. Abstraction :- Abstraction is the process of showing only essential/necessary features of an entity/Object to the outside world and hide the other irrelevant information. For Example to open your TV we only have a power button, it is not understand how infra-red waves are getting generated in Tv remote control.
+
+3. Inheritance :- Inheritance allows a class (subclass) to acquire the properties and behavior of another class (super-class). It helps to reuse, customize and enhance the existing code. So it helps to write a code accurately and reduce the development time.
+
+4. Polymorphism :- Sp Polymorphism means "many forms". A subclass can subclass can define its own unique behavior and still share the same functionalities or behavior of its parent/base class.
+
+
+class square(){                                            class circle(){
+    area()                                                       area()        
+}                                                               }
+
+Var 1 = new square();                                           Var C1 = new circle()
+S1->area();                                                     C1->area();

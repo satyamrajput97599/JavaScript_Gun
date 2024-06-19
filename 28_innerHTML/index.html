@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28_innerHTML</title>
+</head>
+<body>
+    <h1>28_innerHTML</h1>
+
+    <div id="intro">
+        <p>Hello this a p Tag</p>
+    </div>
+
+    <script>
+        let elem = document.getElementById("intro");
+
+        // let constant = elem.innerHTML;
+        elem.innerHTML = "<h2>This is a Heading</h2>";
+
+        console.log(constant);
+    </script>
+</body>
+</html>

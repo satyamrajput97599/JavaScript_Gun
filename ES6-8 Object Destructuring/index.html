@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6-8 Object Destructuring</title>
+  </head>
+  <body>
+    <h1>ES6-8 Object Destructuring</h1>
+
+    <script>
+      // Object Destructuring
+      let book = {
+        title: "JavaScript: The Definitive Guide",
+        author: "David Flanagan",
+        price: 150,
+
+        publication: {
+          publisher: "O'Reilly Media",
+          publicationDate: "2011-07-01",
+        },
+      };
+
+      // let name = book.title;
+      // let {title,author,publisher} = book;
+      let { title: name, author, price, publication : {publisher : pub,publicationDate} } = book;
+    //   console.log(book);
+    //   console.log(author);
+    //   console.log(name);
+    //   console.log(publicationDate);
+      console.log(pub);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_Select an element by Class</title>
+</head>
+<body>
+    <h1>23_Select an element by Class</h1>
+
+    <ul>
+        <li class="cl pi">List 1</li>
+        <li id="first">List 2</li>
+        <li>List 3</li>
+        <li class="cl">List 4</li>
+    </ul>
+
+    <script>
+        let elem =document.getElementsByClassName("cl pi");
+        // console.log(elem.length);
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].innerHTML = "<p> hello </p>";
+        }
+        // elem.innerHTML = "<p> hello </p>";
+    </script>
+</body>
+</html>

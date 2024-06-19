@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before</title>
+</head>
+<body>
+    <h1>29_Insert Before</h1>
+
+    <ul id="list">
+        <!-- 1 -->
+        <li>List 1</li>
+        <!-- 2 -->
+        <li>List 2</li> 
+        <!-- 3 -->
+        <li>List 3</li>
+        <!-- 4 -->
+        <li>List 4</li>
+        <!-- 5 -->
+    </ul>
+
+    <script>
+        // let list1 = document.getElementById("list"); //Parent
+
+        // let item = document.createElement("li");
+        // item.textContent = "new List 5";
+
+        // let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;
+
+        // list1.insertBefore(item, pos); // 2parameter
+
+        let parent = document.body;
+
+        let elm = document.createElement("h2");
+        elm.textContent = "This is new Element";
+
+        let list = document.getElementById("list");
+
+        parent.insertBefore(elm, list);
+    </script>
+</body>
+</html>

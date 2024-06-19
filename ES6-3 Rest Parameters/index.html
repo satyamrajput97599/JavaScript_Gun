@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6-3 Rest Parameters</title>
+</head>
+<body>
+    <h1>ES6-3 Rest Parameters</h1>
+
+    <script>
+        // Rest Parameters
+        // function sum(a,b) {
+        //     return a+b;
+        // }
+        // sum(20,20);
+
+        function sum(...args) { // argument
+            // console.log(args);
+            let result = 0;
+
+            for (let i = 0; i < args.length; i++) {
+                result += args[i];
+            }
+
+            console.log(result);
+        }
+
+        sum(2,5,10,3);
+        sum(); //0
+    </script>
+</body>
+</html>

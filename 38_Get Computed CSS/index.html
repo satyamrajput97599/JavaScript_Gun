@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Computed CSS</title>
+
+    <style>
+        #btn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Computed CSS</h1>
+
+    <button id="btn" class="form1" style="color: blue;">Send</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+
+        let css = getComputedStyle(btn);
+        console.log(css.color);
+    </script>
+</body>
+</html>

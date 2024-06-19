@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6-7 Array Destructuring</title>
+</head>
+<body>
+    <h1>ES6-7 Array Destructuring</h1>
+
+    <script>
+        // let book = ["Advance Js",100 , 200, ["Satyam", 2024]];
+        // console.log(book[2]);
+        // let name = book[0];
+        // let price = book[2];
+        // console.log(name);
+        // console.log(price);
+        
+        // let[name, page, price, [publication,year]] = book
+        // let[name, page=500, price, publication] = book
+        // console.log(book);
+        // console.log(page);
+        // console.log(publication);
+        // console.log(year);
+
+        function book() {
+            // do something
+            return ["Advance Js", 200];
+        }
+
+        let [book_title, price] = book();
+
+        console.log(book_title,price);
+    </script>
+</body>
+</html>
